@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import SignUp from './signUp/SignUp';
 import SignIn from './signIn/SignIn';
+import Jokes from './jokes/Jokes';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Route path='/signup' component={SignUp} />
         <Route path='/signin' component={SignIn} />
+        <Route path='/jokes' component={Jokes} />
       </main>
     </div>
   );

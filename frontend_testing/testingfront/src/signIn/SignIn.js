@@ -15,7 +15,7 @@ class SignIn extends Component {
 
     handleSubmit =e => {
         e.preventDefault();
-        const endpoint = 'http:localhost:3300/api/login';
+        const endpoint = 'http://localhost:3300/api/login';
         axios.post(endpoint, this.state)
         .then(res => {
             localStorage.setItem('jwt', res.data.token);
